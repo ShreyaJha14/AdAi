@@ -29,9 +29,9 @@ export default function Navbar() {
 
                 <div className='hidden md:flex items-center gap-8 text-sm font-medium text-gray-300'>
                     {navLinks.map((link) => (
-                        <a href={link.href} key={link.name} className="hover:text-white transition">
+                        <Link onClick={()=> scrollTo(0,0)} to={link.href} key={link.name} className="hover:text-white transition">
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
