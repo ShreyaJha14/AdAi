@@ -20,11 +20,13 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/generate' element={<Generator />} />
-				<Route path='/community' element={<Community />} />
-				<Route path='/loading' element={<Loading />} />
-				<Route path='/my-generations' element={<MyGenerations />} />
-				<Route path='/plans' element={<Plans />} />
 				<Route path='/result/:projectId' element={<Result />} />
+				<Route path='/my-generations' element={<MyGenerations />} />
+				<Route path='/community' element={<Community />} />
+				<Route path='/plans' element={<Plans />} />
+				<Route path='/loading' element={<Loading />} />
+				
+				
 			</Routes>
 			<Footer />
 		</>
